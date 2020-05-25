@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<style>img.wooba{
+			   display:block;
+			   margin-left:auto;
+			   margin-right:auto
+			   }
+			body {background-color:black;
+				color:white;
+				text-align: center;}
+		</style>
+	</head>
+	<body>
+		<img class="wooba" src="beer.jpg">
+		<script>
+			function Redirect(){
+				var breweries = [
+				"http://www.apponaugbewing.com",
+				"http://www.beeronearth.com",
+				"http://www.bravobrewingcompany.com",
+				"http://www.buttonwoodsbrewery.com",
+				"http://www.crookedcurrentbrewery.com",
+				"http://www.foolproofbrewing.com",
+				"http://www.greysailbrewing.com",
+				"http://www.Islebrewers.com",
+				"http://www.linesiderbrewing.com",
+				"http://www.longlivebeerworks.com",
+				"http://www.lopsbrewing.com",
+				"http://www.newportcraft.com",
+				"http://www.proclamationaleco.com",
+				"http://www.pvdbc.com",
+				"http://www.raggedislandbrewing.com",
+				"http://www.ravenousbrew.com",
+				"http://www.revivalbrewing.com",
+				"http://www.shaidzonbeerco.com",
+				"http://www.smugbrewing.com",
+				"http://www.drinksol.com",
+				"http://www.newportvineyards.com",
+				"http://www.generalscrossing.com",
+				"http://www.tiltedbarnbrewery.com",
+				"http://www.trinitybrewhouse.com",
+				"http://www.twelvegunsbrewing.com",
+				"http://www.johnharvards.com",
+				"http://www.wickfordalewerks.com",
+				"https://whalers.com",
+				"https://ww.communitybruin.com/"];
+
+				var goTo=Math.floor(Math.random() * 29);
+
+				window.location = breweries[goTo];
+			}
+		
+			document.write("You will be redirected to one of RI's 29 breweries in 10 seconds.");
+			setTimeout('Redirect()', 10000);
+		</script>
+	</body>
+<html>
+
